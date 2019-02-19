@@ -53,39 +53,54 @@ const playRound = (userChoice, computerChoice) => {
     if (userChoice === 'rock'){
       if (computerChoice === 'paper') {
         computerScore++;
-        alert('The computer has won!');
+        alert(`The computer has won! 
+        You threw: ${userChoice}. 
+        The computer threw: ${computerChoice}.`);
       } else if (userChoice === computerChoice) {
         tieScore++;
-        alert('The game is tied. Please play again.')
+        alert(`It's a tie!
+        You and the computer both threw ${userChoice}.`)
       } else {
         playerScore++;
-        alert('The user has won!');
+        alert(`The user has won! 
+        You threw: ${userChoice}. 
+        The computer threw: ${computerChoice}.`);
       };
     };
     
     if (userChoice === 'paper') {
       if (computerChoice === 'scissors') {
         computerScore++;
-        alert('The computer has won!');
+        alert(`The computer has won! 
+        You threw: ${userChoice}. 
+        The computer threw: ${computerChoice}.`);
       } else if (userChoice === computerChoice) {
         tieScore++;
-        alert('The game is tied. Please play again.')  
+        alert(`It's a tie!
+        You and the computer both threw ${userChoice}.`) 
       } else {
         playerScore++;
-        alert('The user has won!');
+        alert(`The user has won! 
+        You threw: ${userChoice}. 
+        The computer threw: ${computerChoice}.`);
       };
     };
     
     if (userChoice === 'scissors') {
       if (computerChoice === 'rock') {
         computerScore++;
-        alert('The computer has won!');
+        alert(`The computer has won! 
+        You threw: ${userChoice}. 
+        The computer threw: ${computerChoice}.`);
       } else if (userChoice === computerChoice) {
         tieScore++;
-        alert('The game is tied. Please play again.') 
+        alert(`It's a tie!
+        You and the computer both threw ${userChoice}.`) 
       } else {
         playerScore++;
-        alert('The user has won!');
+        alert(`The user has won! 
+        You threw: ${userChoice}. 
+        The computer threw: ${computerChoice}.`);
       };
     };
 
